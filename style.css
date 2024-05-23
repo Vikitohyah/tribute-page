@@ -36,7 +36,7 @@ li {
 i {
     color: white;
 }
-.container {
+/**.container {
     position: absolute;
     margin-top: 10px;
     background-color: white;
@@ -47,6 +47,27 @@ i {
     overflow: hidden;
     margin-bottom: 10px;
     
+}**/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+}
+
+.center-box {
+    background-color: white;
+    padding: 0;
+    border: 1px;
+    box-shadow: 0 2px 0 2px rgba(0,0,0,0.1);
+    /**border-radius: 10px; **/
+    max-width: 850px;
+    width: 100%;
+    position: relative;
+    overflow-y: auto;
+    max-height: max-content;
 }
 
 #title {
@@ -55,8 +76,7 @@ i {
     border-bottom: 1px solid;
     width: 750px;
     margin: auto;
-    display: block;
-    
+    display: block;  
 }
 
 h1 {
@@ -102,4 +122,8 @@ footer{
 .year{
     font-size: large;
     font-weight: bold;
+}
+
+.footer-nav {
+    color: black;
 }
